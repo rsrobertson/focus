@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="/libs/bootstrap/dist/css/bootstrap.css">
+</head>
+<body ng-app="focus">
+ <div class="row" ng-controller="TimerCtrl as tc">
+   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+     <button type="button" class="btn btn-primary" ng-click="tc.start()">Start</button>
+     <button type="button" class="btn btn-primary" ng-click="tc.stop()">Stop</button>
+     <button type="button" class="btn btn-primary" ng-click="tc.reset()">Reset</button>
+   </div>
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+      <span>{{vm.elapsed}}</span>
+    </div>
+ </div>
+</body>
+<script type="text/javascript" src="/libs/angular/angular.js"></script>
+<script src="app.js" type="text/javascript" charset="utf-8"></script>
+</html>
